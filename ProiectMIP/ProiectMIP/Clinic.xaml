@@ -1,0 +1,68 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="ProiectMIP.Clinic"
+             Title="Clinică">
+
+    <Shell.TitleView>
+        <StackLayout>
+            <Button Clicked="Button_Clicked" Text="Salvare" WidthRequest="100" HorizontalOptions="End" VerticalOptions="Center"></Button>
+        </StackLayout>
+    </Shell.TitleView>
+
+    <ScrollView>
+        <Grid x:Name="grid_clinic" Padding="5" Margin="0">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="50"/>
+                <RowDefinition Height="50"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+            </Grid.RowDefinitions>
+
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+            </Grid.ColumnDefinitions>
+
+            <Entry x:Name="EntryClinic" Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="4" Placeholder="Clinică nr....... Fișă T.B.C. nr......."  FontSize="18" FontAttributes="Bold"/>
+
+            <Frame Padding="0"  Grid.Row="1" Grid.Column="0" Grid.ColumnSpan="3">
+                <Label HorizontalTextAlignment="Center" VerticalTextAlignment="Center" Text="Depistare T.B.C"/>
+            </Frame>
+
+            <Frame Padding="0" Grid.Row="1" Grid.RowSpan="2" Grid.Column="3">
+                <Label HorizontalTextAlignment="Center" VerticalTextAlignment="Center" Text="Semnătura&#10;medicului"/>
+            </Frame>
+
+            <Frame Padding="0" Grid.Row="2" Grid.Column="0">
+                <Label HorizontalTextAlignment="Center" VerticalTextAlignment="Center" Text="MRF"/>
+            </Frame>
+
+            <Frame Padding="0" Grid.Row="2" Grid.Column="1">
+                <Label HorizontalTextAlignment="Center" VerticalTextAlignment="Center" Text="RDR"/>
+            </Frame>
+
+            <Frame Padding="0" Grid.Row="2" Grid.Column="2">
+                <Label HorizontalTextAlignment="Center" VerticalTextAlignment="Center" Text="FGG"/>
+            </Frame>
+
+
+
+        </Grid>
+    </ScrollView>
+</ContentPage>

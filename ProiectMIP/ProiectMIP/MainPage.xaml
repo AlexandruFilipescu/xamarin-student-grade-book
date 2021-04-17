@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Shell xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:ProiectMIP"
+             x:Class="ProiectMIP.MainPage"
+             >
+    <Shell.FlyoutHeader>
+        <local:HeaderContentView/>
+    </Shell.FlyoutHeader>
+
+    <FlyoutItem Title="MyTabApp"
+                Shell.TabBarIsVisible="False"
+                FlyoutDisplayOptions="AsMultipleItems">
+        <ShellContent Title="Profil" Icon="account.png" IsTabStop="True" ContentTemplate="{DataTemplate local:BasicGridPage}"></ShellContent>
+        <ShellContent Title="Vize Anuale" Icon="stamp.png" IsTabStop="True" ContentTemplate="{DataTemplate local:Annual_Visas}"></ShellContent>
+        <ShellContent Title="Note" Icon="pen.png" IsTabStop="True" ContentTemplate="{DataTemplate local:Grades}"></ShellContent>
+        <ShellContent Title="Fișă dispensar" Icon="medical_bag.png" IsTabStop="True" ContentTemplate="{DataTemplate local:Dispensary_Sheet}"></ShellContent>
+        <ShellContent Title="Clinică" Icon="clinic.png" IsTabStop="True" ContentTemplate="{DataTemplate local:Clinic}"></ShellContent>
+
+    </FlyoutItem>
+
+
+</Shell>

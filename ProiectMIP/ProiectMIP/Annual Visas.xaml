@@ -1,0 +1,82 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="ProiectMIP.Annual_Visas"
+             Title="VIZE ANUALE">
+    <!--<Shell.TitleView>
+        <StackLayout HorizontalOptions="CenterAndExpand">
+            <Label Text="VIZE ANUALE"  FontSize="20" TextColor="White" HorizontalOptions="Center"
+               VerticalOptions="Center" />
+        </StackLayout>
+    </Shell.TitleView>-->
+    <Frame  Margin="20">
+        
+        <Grid Padding="10">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+            </Grid.RowDefinitions>
+
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+            </Grid.ColumnDefinitions>
+
+
+            <StackLayout Grid.Row="0" Grid.Column="0" HorizontalOptions="Center">
+                <Entry x:Name="Visa1"/>
+                <Label Text="Secretar," HorizontalOptions="Center"/>
+                <Label Text="L.S." HorizontalOptions="Center"/>
+            </StackLayout>
+
+
+            <StackLayout Grid.Row="0" Grid.Column="1" HorizontalOptions="Center">
+                <Entry x:Name="Visa2"/>
+                <Label Text="Secretar," HorizontalOptions="Center"/>
+                <Label Text="L.S." HorizontalOptions="Center"/>
+            </StackLayout>
+
+
+            <StackLayout Grid.Row="1" Grid.Column="0" HorizontalOptions="Center">
+                <Entry x:Name="Visa3"/>
+                <Label Text="Secretar," HorizontalOptions="Center"/>
+                <Label Text="L.S." HorizontalOptions="Center"/>
+            </StackLayout>
+
+            <StackLayout Grid.Row="1" Grid.Column="1" HorizontalOptions="Center">
+                <Entry x:Name="Visa4"/>
+                <Label Text="Secretar," HorizontalOptions="Center"/>
+                <Label Text="L.S." HorizontalOptions="Center"/>
+            </StackLayout>
+
+            <StackLayout Grid.Row="2" Grid.Column="0" HorizontalOptions="Center">
+                <Entry x:Name="Visa5"/>
+                <Label Text="Secretar," HorizontalOptions="Center"/>
+                <Label Text="L.S." HorizontalOptions="Center"/>
+            </StackLayout>
+
+            <StackLayout Grid.Row="2" Grid.Column="1" HorizontalOptions="Center">
+                <Entry x:Name="Visa6"/>
+                <Label Text="Secretar," HorizontalOptions="Center"/>
+                <Label Text="L.S." HorizontalOptions="Center"/>
+            </StackLayout>
+
+            <StackLayout Grid.Row="3" Grid.Column="0" HorizontalOptions="Center">
+                <Entry x:Name="Visa7"/>
+                <Label Text="Secretar," HorizontalOptions="Center"/>
+                <Label Text="L.S." HorizontalOptions="Center"/>
+            </StackLayout>
+            
+            
+            <StackLayout Grid.Row="3" Grid.Column="1" HorizontalOptions="Center">
+                <Entry x:Name="Visa8"/>
+                <Label Text="Secretar," HorizontalOptions="Center"/>
+                <Label Text="L.S." HorizontalOptions="Center"/>
+            </StackLayout>
+
+        </Grid>
+        
+    </Frame>
+</ContentPage>

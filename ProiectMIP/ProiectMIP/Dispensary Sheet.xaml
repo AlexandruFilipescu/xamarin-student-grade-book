@@ -1,0 +1,63 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="ProiectMIP.Dispensary_Sheet"
+             Title="Fișă Dispensar">
+
+    <Shell.TitleView>
+        <StackLayout>
+            <Button Clicked="Button_Clicked" Text="Salvare" WidthRequest="100" HorizontalOptions="End" VerticalOptions="Center"></Button>
+        </StackLayout>
+    </Shell.TitleView>
+
+    <ScrollView>
+        <Grid x:Name="grid_Dispensary" Padding="5" Margin="0">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="50"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+            </Grid.RowDefinitions>
+
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+            </Grid.ColumnDefinitions>
+
+            <Entry x:Name="EntryDispensary" Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="4" Placeholder="Fișă dispensar nr....... Fișă polic......." Text="Fișă dispensar nr....... Fișă polic......."  FontSize="18"/>
+
+            <Frame Padding="0"  Grid.Row="1" Grid.Column="0">
+                <Label HorizontalTextAlignment="Center" VerticalTextAlignment="Center" Text="Anul&#10;universitar"/>
+            </Frame>
+
+            <Frame Padding="0" Grid.Row="1" Grid.Column="1">
+                <Label HorizontalTextAlignment="Center" VerticalTextAlignment="Center" Text="Anul&#10;de&#10;studii"/>
+            </Frame>
+
+            <Frame Padding="0" Grid.Row="1" Grid.Column="2">
+                <Label HorizontalTextAlignment="Center" VerticalTextAlignment="Center" Text="Control&#10;clinic"/>
+            </Frame>
+
+            <Frame Padding="0" Grid.Row="1" Grid.Column="3">
+                <Label HorizontalTextAlignment="Center" VerticalTextAlignment="Center" Text="R.B.W.&#10;Bul. nr."/>
+            </Frame>
+
+
+
+        </Grid>
+    </ScrollView>
+</ContentPage>

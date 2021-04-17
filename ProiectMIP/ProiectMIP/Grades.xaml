@@ -1,0 +1,71 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="ProiectMIP.Grades"
+             Title="Note">
+    <Shell.TitleView>
+        <StackLayout>
+            <Button Clicked="Button_Clicked" Text="Salvare" WidthRequest="100" HorizontalOptions="End" VerticalOptions="Center"> </Button>
+        </StackLayout>
+    </Shell.TitleView>
+    
+    <ScrollView>
+        <Grid x:Name="grid_Grades" Padding="5" Margin="0">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="70"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+            </Grid.RowDefinitions>
+
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="2*"/>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+            </Grid.ColumnDefinitions>
+
+            <Label Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="1" HorizontalOptions="End" VerticalOptions="Center" Text="Anul universitar"/>
+            <Entry x:Name="Entry_UniversityYear" TextChanged="UniversityYearTextChanged" Grid.Row="0" Grid.Column="1" Grid.ColumnSpan="2" HorizontalOptions="Start" Placeholder="20 ......./20 ......."/>
+
+            <Label Grid.Row="0" Grid.Column="3" Grid.ColumnSpan="1" HorizontalOptions="Start" VerticalOptions="Center" Text="Anul de studii"/>
+            <Entry x:Name="Entry_UniversityYearOfStudy" TextChanged="UniversityYearOfStudyTextChanged" Grid.Row="0" Grid.Column="4" Grid.ColumnSpan="1" HorizontalOptions="Start" Placeholder="..........." />
+            
+            <Frame Padding="0"  Grid.Row="1" Grid.Column="0">
+                <Label HorizontalTextAlignment="Center" VerticalTextAlignment="Center" Text="Discipline &#10; de învățat"/>
+            </Frame>
+
+            <Frame Padding="0" Grid.Row="1" Grid.Column="1">
+                <Label HorizontalTextAlignment="Center" VerticalTextAlignment="Center" Text="Felul probei"/>
+            </Frame>
+
+            <Frame Padding="0" Grid.Row="1" Grid.Column="2">
+                <Label HorizontalTextAlignment="Center" VerticalTextAlignment="Center" Text="Calificativul/&#10;nota"/>
+            </Frame>
+
+            <Frame Padding="0" Grid.Row="1" Grid.Column="3">
+                <Label HorizontalTextAlignment="Center" VerticalTextAlignment="Center" Text="Data&#10;examinării"/>
+            </Frame>
+
+            <Frame Padding="0" Grid.Row="1" Grid.Column="4">
+                <Label HorizontalTextAlignment="Center" VerticalTextAlignment="Center" Text="Semnătura&#10;examinatorului"/>
+            </Frame>
+            
+            
+
+        </Grid>
+    </ScrollView>
+</ContentPage>
